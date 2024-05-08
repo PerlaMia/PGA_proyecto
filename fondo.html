@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Video de Fondo</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            overflow: hidden;
+        }
+        #content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <video id="video-background" autoplay muted loop>
+        <source src="fondoV.mp4" type="video/mp4">
+        <!-- Agrega aquí otras fuentes de video si es necesario -->
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+    <div id="content">
+        <!-- Aquí puedes agregar el contenido de tu página -->
+        <h1>¡Bienvenido a mi página con video de fondo!</h1>
+        <p>Este es un ejemplo de cómo agregar un video de fondo a tu página HTML.</p>
+    </div>
+</body>
+</html>

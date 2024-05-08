@@ -1,0 +1,591 @@
+#menu li {
+  display: inline;
+  margin-right: 100px;
+}
+#menu li a {
+  text-decoration: none;
+  color: none;
+    font-size: 25px;
+    font-family: italic;
+    padding-top: 300px;
+  } 
+
+#menu li a:hover {
+  background-color: lightgray;
+}
+
+#div2 {
+    background-color: none;
+    font-family: sans-serif;
+    width: 1900px;
+    height: 700px; /* Ajusta la altura según sea necesario */
+    margin: 0px;
+    padding-top: 100px;
+    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+}
+.content{
+    font-family: sans-serif;
+}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('img.24.webp'); /* Reemplaza 'tu-imagen-de-fondo.jpg' con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Cambia el color de fondo del encabezado según tus preferencias */
+    color: lightblue;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.contact,
+.questions {
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.8); /* Ajusta la opacidad del fondo de los contenedores según lo necesites */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.questions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.questions ul li {
+    margin-bottom: 10px;
+}
+
+.questions ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.answer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Ajusta la opacidad del fondo del cuadro de respuesta según lo necesites */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    z-index: 100;
+}
+
+.answer .answer-text {
+    margin-bottom: 20px;
+}
+
+.answer .answer-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+
+/* CSS existente */
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    z-index: 2; /* Asegura que el encabezado esté encima del contenido */
+}
+
+.dropdown {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 2; /* Asegura que las líneas y el menú estén encima del contenido */
+}
+
+.line {
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown:hover .line {
+    width: 100%;
+}
+
+.dropdown-content {
+    opacity: 0; /* Oculta el menú desplegable inicialmente */
+    visibility: hidden; /* Oculta el menú desplegable inicialmente */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    left: 50%; /* Alinea el menú desplegable en el centro */
+    transform: translateX(-50%) translateY(-50%); /* Centra horizontal y verticalmente el menú desplegable */
+    z-index: 2; /* Asegura que el menú desplegable esté encima del contenido */
+    transition: opacity 0.3s, visibility 0.3s; /* Agrega transición suave */
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1; /* Muestra el menú desplegable */
+    visibility: visible; /* Muestra el menú desplegable */
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown-content ul li {
+    margin-bottom: 10px;
+}
+
+.dropdown-content ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.answer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    z-index: 3; /* Asegura que la respuesta esté encima del menú desplegable */
+}
+
+.answer.active {
+    display: block; /* Muestra la respuesta cuando tiene la clase 'active' */
+}
+
+.answer .answer-text {
+    margin-bottom: 20px;
+}
+
+.answer .answer-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+#menu li {
+  display: inline;
+  margin-right: 100px;
+}
+#menu li a {
+  text-decoration: none;
+  color: black;
+    font-size: 25px;
+    font-family: italic;
+    padding-top: 10px;
+  } 
+
+#menu li a:hover {
+  background-color: lightgray;
+}
+
+#div2 {
+    background-color: #a8bd95;
+    width: 1600px;
+    height: 800px;
+    margin: 0px;
+    padding-top: 100px;
+    margin-bottom: -20px; /* Ajusta el valor según sea necesario */
+}
+
+#pie-pag {
+    background: #888888;
+    height: 250px;
+    width: 100%;
+}
+
+#div2 h1{
+    text-align: center;
+    padding-top: 0px;
+    font-style: italic;
+    color: black;
+}
+#div2 p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: italic;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+#div2 h2{
+    color: black;
+    font-size: 20px;
+    font-family: italic;
+}
+  
+
+#pie-pag{     
+    background: #888888;
+    height: 250px;
+    width: 100%;    
+}
+#listaredes li{    
+    display: inline-flex; 
+    padding-left: 0px;
+    margin-right: 0px;
+    transition: transform 0.3s ease;
+}
+#listaredes{
+    float: right;
+    padding-left: 0px;
+    padding-top: 10px
+}
+#listaredes img{
+    height: 50px;
+    width: 50px;
+}
+#listaredes li:hover{
+    transform: scale(1.3);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el menú */
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #555;
+}
+
+/* Estilos para el menú desplegable */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.submenu li {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+.submenu li a {
+    padding: 12px 16px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: #ddd;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+#navegador-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #922b21; /* Color de fondo de la barra de navegación */
+    overflow: hidden;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+
+#navegador-fixed a {
+    float: left; /* Alinea los elementos a la izquierda */
+    display: block; /* Los convierte en elementos de bloque */
+    color: white; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    padding: 14px 16px; /* Espaciado interior (arriba y abajo, izquierda y derecha) */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
+#navegador-fixed a img {
+    vertical-align: middle; /* Alinear verticalmente la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
+#navegador-fixed a:hover {
+    background-color: #ddd; /* Color de fondo al pasar el ratón */
+    color: black; /* Cambia el color del texto al pasar el ratón */
+}
+
+/* Agrega un margen superior al resto del contenido para evitar que se solape con el navegador */
+body {
+    margin-top: 0px; /* Ajusta según el tamaño de la barra de navegación */
+}
+#navegador-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1000%;
+    height: 50px; 
+    background-color: #333; /* Fondo negro */
+    overflow: hidden;
+    z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+#divimg {
+    float: left;
+    margin-right: 0px;
+    background-color: #333; /* Fondo negro */
+    padding: 30px; /* Añade un poco de espacio entre la imagen y el borde */
+}
+
+#divimg img {
+    width: 80px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 53.5px 100px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #555;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.submenu li {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+.submenu li a {
+    padding: 10px 10px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: #ddd;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+
+
+ #containeri img:hover {
+  animation: shake 0.5s ease infinite; /* Aplica la animación de temblor al pasar el ratón sobre la imagen */
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0, 0) rotate(0); /* Estado inicial: sin desplazamiento ni rotación */
+  }
+  25% {
+    transform: translate(-3px, -3px) rotate(-2deg); /* Desplazamiento y rotación ligera */
+  }
+  50% {
+    transform: translate(3px, 3px) rotate(2deg); /* Desplazamiento y rotación en la dirección opuesta */
+  }
+  75% {
+    transform: translate(-2px, -2px) rotate(-1deg); /* Desplazamiento y rotación ligera */
+  }
+  100% {
+    transform: translate(0, 0) rotate(0); /* Estado final: sin desplazamiento ni rotación */
+  }
+    
+}
+ #formulario {
+  max-width: 400px;
+  margin: 0px auto ;
+  padding: 0px;
+  border: 7px solid #ccc;
+  border-radius: 15px;
+}
+
+#formulario h2 {
+  margin-bottom: 10px;
+}
+
+#formulario label,
+#formulario input,
+#formulario textarea,
+#formulario button {
+  display:block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#formulario input[type="text"],
+#formulario input[type="email"],
+#formulario input[type="number"],
+#formulario input[type="password"],
+#formulario textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: calc(100% - 20px); 
+}
+
+#formulario button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: 100px;
+  border-radius: 100px;
+  cursor: pointer;
+    
+}
+
+#formulario button:hover {
+  background-color: lightskyblue;
+}
+/* Estilos para el menú desplegable */
+.dropdown-right {
+    float: right; /* Coloca el elemento a la derecha */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 200px; /* Ancho del menú desplegable */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    bottom: 20px; /* Distancia desde la parte inferior del menú */
+    right: 0; /* Ajusta el menú a la derecha */
+}
+
+.dropdown-content img {
+    display: block;
+    margin: 10px auto; /* Ajusta el margen de las imágenes dentro del menú */
+}
+
+/* Mostrar el menú desplegable al pasar el cursor sobre el elemento del menú */
+.dropdown-right:hover .dropdown-content {
+    display: block;
+}
+/* Estilos para la galería de imágenes */
+.galeria {
+  position: relative; /* Posición relativa para que los botones se posicionen correctamente */
+  text-align: center; /* Centrar el contenido */
+  padding-top:  150px;
+     width: 1235px;
+    height: 800px;
+    margin: 0px;
+    padding-top: 100px;
+}
+
+.galeria img {
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  height: 150; /* Permite que la altura de la imagen se ajuste automáticamente */
+  display: block; /* Cambia la visualización de la imagen a bloque para aplicar márgenes automáticos */
+  margin: 0 auto; /* Centra horizontalmente la imagen utilizando márgenes automáticos */
+ 
+}
+
+.imagen-oculta,.imagen-actual{
+    width: 150px;
+    height: 1000px;
+   
+}
+.gallery-container {
+  max-width: 600px;
+    width: 300;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.gallery-carousel {
+  display: flex;
+  transition: transform 0.1s ease;
+}
+
+.gallery-carousel img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+

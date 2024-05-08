@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative; /* Añadido para posicionar los botones */
+}
+
+.image-container {
+  margin: 10px;
+  padding: 10px;
+  width: 300px; /* Aumentado el tamaño de las imágenes */
+  border: 6px solid #ffffff; /* Aumentado el grosor del borde */
+  background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ajuste de la sombra */
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.image-container:hover {
+  transform: none; /* Eliminado el efecto de escala */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4); /* Sombras más pronunciadas */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  filter: grayscale(0); /* Añadido para desactivar temporalmente el filtro gris */
+}
+
+.image-container:hover img {
+  filter: grayscale(100%); /* Efecto de desenfoque al pasar el cursor */
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.button-container { /* Agregado para contener los botones */
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button {
+  margin: 0 5px; /* Espacio entre los botones */
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
